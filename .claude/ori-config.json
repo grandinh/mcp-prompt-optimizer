@@ -1,5 +1,5 @@
 {
-  "version": "1.0",
+  "version": "1.1",
   "auto_approve_low_risk": true,
   "research_depth": "thorough",
   "max_sources": 5,
@@ -8,6 +8,12 @@
     "external_api_calls",
     "destructive_operations"
   ],
+  "model_selection": {
+    "always_use_opus_for_strategy": true,
+    "allow_dynamic_phase1": true,
+    "prefer_haiku_for_docs": true,
+    "min_complexity_for_opus": "high"
+  },
   "documentation_updates": {
     "auto_update_readme": true,
     "auto_update_changelog": true,

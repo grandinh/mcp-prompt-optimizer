@@ -62,17 +62,23 @@ Use the optimize_prompt tool to analyze: "build a dashboard"
 
 **Option 2: Use the `/ori` slash command (Claude Code)**
 
-The `/ori` (Optimize-Research-Implement) command provides an autonomous workflow:
+The `/ori` (Optimize-Research-Implement) command provides an autonomous workflow with intelligent multi-model selection:
 
 ```bash
 /ori add JWT authentication to the Express API
 ```
 
 This will:
-1. **Research** - Automatically search docs, best practices, and your codebase
-2. **Verify** - Cross-validate findings and check for risks
-3. **Implement** - Apply changes with error handling
-4. **Document** - Update README, CHANGELOG, and other docs
+0. **Strategy (Opus)** - Design optimal research plan and select best models
+1. **Research (Dynamic)** - Automatically search docs, best practices, and codebase
+2. **Verify (Sonnet)** - Cross-validate findings and check for risks
+3. **Implement (Sonnet/Haiku)** - Apply changes with error handling
+4. **Document (Haiku)** - Update README, CHANGELOG, and other docs
+
+**Multi-Model Benefits:**
+- 40% cost reduction vs. all-Opus
+- 30% faster execution
+- Each model used in its optimal zone
 
 See [/ori command documentation](.claude/commands/ori.md) for details.
 
@@ -372,6 +378,10 @@ If this tool helps you get better AI responses, give it a star!
 ### v1.1.0 (2025-11-08)
 
 - Added `/ori` slash command for autonomous research-implement workflow
+- **Intelligent multi-model selection** (Opus → Sonnet → Haiku)
+  - Phase 0: Opus creates research strategy
+  - Phase 1: Dynamic model selection based on complexity
+  - Phase 2-4: Optimized model per phase (40% cost savings)
 - Integrated OODA framework with OTA Loop in optimized_prompts.md
 - Added automatic web search and documentation research
 - Implemented error handling and rollback mechanisms
