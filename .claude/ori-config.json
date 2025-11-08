@@ -1,0 +1,33 @@
+{
+  "version": "1.0",
+  "auto_approve_low_risk": true,
+  "research_depth": "thorough",
+  "max_sources": 5,
+  "require_confirmation_for": [
+    "breaking_changes",
+    "external_api_calls",
+    "destructive_operations"
+  ],
+  "documentation_updates": {
+    "auto_update_readme": true,
+    "auto_update_changelog": true,
+    "auto_bump_version": false
+  },
+  "error_handling": {
+    "max_retries": 2,
+    "rollback_on_failure": true,
+    "create_backups": true
+  },
+  "research_sources": {
+    "prefer_official_docs": true,
+    "include_github_issues": true,
+    "include_stack_overflow": true,
+    "verify_multiple_sources": true
+  },
+  "implementation": {
+    "preserve_code_style": true,
+    "add_error_handling": true,
+    "add_inline_comments": true,
+    "validate_before_write": true
+  }
+}

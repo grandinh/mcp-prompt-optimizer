@@ -52,11 +52,29 @@ npm run build
 
 ### Usage
 
+**Option 1: Use the MCP tool directly**
+
 Once installed, use the `optimize_prompt` tool:
 
 ```
 Use the optimize_prompt tool to analyze: "build a dashboard"
 ```
+
+**Option 2: Use the `/ori` slash command (Claude Code)**
+
+The `/ori` (Optimize-Research-Implement) command provides an autonomous workflow:
+
+```bash
+/ori add JWT authentication to the Express API
+```
+
+This will:
+1. **Research** - Automatically search docs, best practices, and your codebase
+2. **Verify** - Cross-validate findings and check for risks
+3. **Implement** - Apply changes with error handling
+4. **Document** - Update README, CHANGELOG, and other docs
+
+See [/ori command documentation](.claude/commands/ori.md) for details.
 
 **Output:**
 ```
@@ -350,6 +368,15 @@ MIT License - see [LICENSE](LICENSE) file for details
 If this tool helps you get better AI responses, give it a star!
 
 ## 📝 Changelog
+
+### v1.1.0 (2025-11-08)
+
+- Added `/ori` slash command for autonomous research-implement workflow
+- Integrated OODA framework with OTA Loop in optimized_prompts.md
+- Added automatic web search and documentation research
+- Implemented error handling and rollback mechanisms
+- Added automatic documentation updates (README, CHANGELOG)
+- Created configurable workflow via `.claude/ori-config.json`
 
 ### v1.0.0 (2025-11-08)
 
