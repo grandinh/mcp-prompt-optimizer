@@ -24,7 +24,7 @@ This MCP server provides an `optimize_prompt` tool that:
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/mcp-prompt-optimizer.git
+git clone https://github.com/grandinh/mcp-prompt-optimizer.git
 cd mcp-prompt-optimizer
 
 # Install dependencies
@@ -343,7 +343,7 @@ MIT License - see [LICENSE](LICENSE) file for details
 ## 🔗 Related
 
 - [Model Context Protocol](https://modelcontextprotocol.io/)
-- [Optimized Prompts Framework](https://github.com/YOUR_USERNAME/optimized-prompts-framework) *(if you want to create a separate repo for the framework docs)*
+- [Optimized Prompts Framework Documentation](https://github.com/grandinh/mcp-prompt-optimizer/blob/main/docs/framework.md) *(coming soon)*
 
 ## ⭐ Support
 
